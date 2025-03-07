@@ -1,7 +1,6 @@
 #! /bin/bash
 
-SCRIPT=`realpath -s $0`
-scriptdir=`dirname $SCRIPT`
+scriptdir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/"
 
 
 if [ $# -lt 2 ]; then
